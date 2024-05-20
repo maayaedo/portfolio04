@@ -512,21 +512,16 @@ h1,h2{
         width: 40%;
     }
 }
+
+
 .view-more-button{
-    padding: 5px 20px;
-    border-radius: 50%;
-    border: none;
     height:40px;
-    box-shadow: 2px 2px 2px 1px #b0b0b0;
     margin-top: 25px;
-    margin-left: 5px;
     cursor: pointer;
 }
 @media screen and (max-width: 450px) {
 .view-more-button{
     margin-top: 20px;
-    margin-left: 10px;
-    padding: 0 15px;
     
 }
 }
