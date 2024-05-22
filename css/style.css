@@ -414,6 +414,8 @@ h1,h2{
         text-align: center;
     }
 }
+
+
 .top-contents-bannerdesign-wrap {
     display: block;
 }
@@ -447,11 +449,7 @@ h1,h2{
         margin-top: 10px;
     }
 }
-@media screen and (max-width: 450px) {
-    .top-contents-thumbnail-details-wrap p{
-        width: 40%;
-    }
-}
+
 
 
 /* --------- ここからsection Gallery ---------- */
@@ -507,12 +505,6 @@ h1,h2{
         margin-top: 10px;
     }
 }
-@media screen and (max-width: 450px) {
-    .top-contents-gallery-details-wrap p{
-        width: 40%;
-    }
-}
-
 
 .view-more-button{
     height:40px;
@@ -522,6 +514,7 @@ h1,h2{
 @media screen and (max-width: 450px) {
 .view-more-button{
     margin-top: 20px;
+    
     
 }
 }
@@ -576,9 +569,9 @@ footer h2{
 }
 @media screen and (max-width: 450px) {
 .footer-sitemap{
-    display: flex;
+    display: block;  
     font-size: 18px;
-    padding: 0 0 60px 10px;
+    padding: 0 0 20px 10px;
 }
 }
 .footer-sitemap a{
@@ -589,7 +582,11 @@ footer h2{
 .footer-sitemap li{
     padding: 50px 10px 5px;
 }
-
+@media screen and (max-width: 450px) {
+.footer-sitemap li{
+    padding: 10px;
+}
+}
 .bottom-contents-bottom-hr{
     width: 95%;
     color: #ececec;
