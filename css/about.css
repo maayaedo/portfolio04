@@ -236,32 +236,59 @@ h1,h2{
 }
 
 .introduce-contents-wrap{
-    padding-top:200px;
+    padding-top:100px;
     text-align: left;
     margin:0 10% 20% 10%;
 }
 .introduce-contents-wrap-p{
     display: flex;
 }
-.introduce-contents{
-    display: flex;
+@media screen and (max-width: 450px) {
+    .introduce-contents-wrap-p h1{
+        margin: 20px 0 0 10px;
+        font-size: 24px;
+    }
 }
-.introduce-contents-p{
-    display: block;
-    line-height: 2em;
-}
-
 .introduce-contents-wrap-p p{
     margin: 40px 0 0 30px;
     font-size: 16px;
     letter-spacing: 2px;
 }
-.introduce-contents h2{
-    padding-top: 100px;
+@media screen and (max-width: 450px) {
+.introduce-contents-wrap-p p{
+    margin: 30px 0 0 30px;
+    font-size: 14px;
 }
-.introduce-contents img{
-    margin-left: 10%;
+}
+
+.introduce-contents{
+    display: flex;
+}
+@media screen and (max-width: 450px) {
+    .introduce-contents{
+    display: block;
+    }
+}
+.introduce-contents-p{
+    display: block;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+.introduce-contents-p h2{
     padding-top: 100px;
+    letter-spacing: 4px;
+}
+@media screen and (max-width: 450px) {
+.introduce-contents-p h2{
+    padding: 100px 0 20px;
+}
+}
+
+@media screen and (max-width: 450px) {
+.introduce-contents-p img{
+    margin-left: 0;
+    padding: 0 0 20px;
+}
 }
 
 /* --------- ここまでmain ---------- */
@@ -287,8 +314,8 @@ footer h2{
 }
 @media screen and (max-width: 450px) {
 footer h2{
-    font-size: 21px;
     text-align: left;
+    font-size: 21px;
     padding:0 0 30px 10px;
 }
 }
@@ -314,9 +341,9 @@ footer h2{
 }
 @media screen and (max-width: 450px) {
 .footer-sitemap{
-    display: flex;
+    display: block;  
     font-size: 18px;
-    padding: 0 0 60px 10px;
+    padding: 0 0 20px 10px;
 }
 }
 .footer-sitemap a{
@@ -327,7 +354,11 @@ footer h2{
 .footer-sitemap li{
     padding: 50px 10px 5px;
 }
-
+@media screen and (max-width: 450px) {
+.footer-sitemap li{
+    padding: 10px;
+}
+}
 .bottom-contents-bottom-hr{
     width: 95%;
     color: #ececec;
