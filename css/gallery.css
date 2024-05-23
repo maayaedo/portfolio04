@@ -235,26 +235,43 @@ h1,h2{
 }
 }
 .contents-wrap{
-    padding-top:200px;
+    padding-top:100px;
     text-align: left;
     margin:0 10% 20% 10%;   
 }
 .contents-wrap-p{
     display: flex;
+    
 }
-
+@media screen and (max-width: 450px) {
+    .contents-wrap-p h1{
+        font-size: 24px;
+        margin: 20px 0 0 10px;
+    }
+}
 .contents-wrap-p p{
-    margin: 55px 0 0 30px;
     font-size: 16px;
     letter-spacing: 2px;
 }
-
+@media screen and (max-width: 450px) {
+.contents-wrap-p p{
+    font-size: 14px;
+    padding: 15px 0 0 20px;
+}
+}
 .gallery-contents-wrap{
     text-align: center;
     display: flex;
     padding-top:50px;
     text-align: left;
     margin:0 10% 20% 10%;
+}
+@media screen and (max-width: 450px) {
+.gallery-contents-wrap{
+    display: block;
+    padding-top:20px;
+    margin-left: 0;
+}
 }
 .gallery-contents-logo h3{
     padding: 50px 0;
@@ -267,10 +284,18 @@ padding: 40px;
 background: #a8a8a8;
 background-size: 100% 100%;
 }
+@media screen and (max-width: 450px) {
+.gallery-contents-logo img{
+    padding: 10px;
+    background: #a8a8a8;
+    background-size: 100% 100%;
+    }
+}
+
 .gallery-contents-shopcard h3{
     padding: 50px 0;
 }
-gallery-contents-wrap02 h3{
+.gallery-contents-wrap02 h3{
     padding: 50px 0;
 }
 
@@ -281,6 +306,13 @@ gallery-contents-wrap02 h3{
 }
 .gallery-contents-illust img{
     padding: 20px;
+}
+
+@media screen and (max-width: 450px) {
+.gallery-contents-illust img{
+    padding: 20px 0 20px;
+    width: 100%;
+}
 }
 /* --------- ここまでmain ---------- */
 
@@ -305,8 +337,8 @@ footer h2{
 }
 @media screen and (max-width: 450px) {
 footer h2{
-    font-size: 21px;
     text-align: left;
+    font-size: 21px;
     padding:0 0 30px 10px;
 }
 }
@@ -332,9 +364,9 @@ footer h2{
 }
 @media screen and (max-width: 450px) {
 .footer-sitemap{
-    display: flex;
+    display: block;  
     font-size: 18px;
-    padding: 0 0 60px 10px;
+    padding: 0 0 20px 10px;
 }
 }
 .footer-sitemap a{
@@ -345,7 +377,11 @@ footer h2{
 .footer-sitemap li{
     padding: 50px 10px 5px;
 }
-
+@media screen and (max-width: 450px) {
+.footer-sitemap li{
+    padding: 10px;
+}
+}
 .bottom-contents-bottom-hr{
     width: 95%;
     color: #ececec;
